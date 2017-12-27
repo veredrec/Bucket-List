@@ -1,0 +1,23 @@
+{
+  "name": "do-more",
+  "version": "1.0.0",
+  "description": "to do app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veredrec/do-more.git"
+  },
+  "author": "Vered Rekanati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veredrec/do-more/issues"
+  },
+  "homepage": "https://github.com/veredrec/do-more#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.7"
+  }
+}
