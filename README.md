@@ -4,12 +4,14 @@
 
 This app was created as a part of [The Advanced Web DeveloperBootcamp by Colt Steele, Udemy](https://www.udemy.com/the-advanced-web-developer-bootcamp/learn/v4/overview)
 
-As in every todo app, you can **ADD**, **MARK AS COMPLETE**, and **DELETE** your tasks.
+As in every todo app, you can **Add**, **Mark as Complete**, and **Delete** your tasks.
 
-### Stack:
+#### Stack:
 
-**NODE.JS**
+NODE.JS
 
-**EXPRESS.JS**
+EXPRESS.JS
 
-**MONGODB**
+MONGODB
+
+![Screen shot](./do-more.png)
