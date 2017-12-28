@@ -22,7 +22,7 @@ function addTodos(todos) {
 
 function addTodo(todo) {
   var newTodo = $(
-    '<li class="task">' + todo.name + '<span class="delete-sign">X</span></li>'
+    '<li class="task">' + todo.name + '<span class="delete">X</span></li>'
   );
   newTodo.data('id', todo._id);
   newTodo.data('completed', todo.completed);
@@ -37,8 +37,8 @@ function createTodo() {
   var userInput = $('#todoInput').val();
   $.post('/api/todos', { name: userInput })
     .then(function(newTodo) {
-      $('#todoInput').val('');
       addTodo(newTodo);
+      $('#todoInput').val('');
     })
     .catch(function(err) {
       console.log(err);
@@ -63,7 +63,7 @@ function removeTodo(todo) {
 function updateTodo(todo) {
   var updateUrl = '/api/todos/' + todo.data('id');
   var isDone = !todo.data('completed');
-  var updateData = { completed: !isDone };
+  var updateData = { completed: isDone };
   $.ajax({
     method: 'PUT',
     url: updateUrl,
