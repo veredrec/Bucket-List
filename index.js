@@ -1,6 +1,6 @@
 var express = require('express'),
   app = express(),
-  port = 3000,
+  port = 4000,
   bodyParser = require('body-parser');
 
 var todoRoutes = require('./routes/todos');
